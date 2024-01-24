@@ -1,0 +1,234 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700;800&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background-color: #fafafa;
+}
+
+#root {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+header {
+  width: 100%;
+  background-color: #492e87;
+}
+
+nav {
+  display: flex;
+  width: 100%;
+  padding: 16px 24px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo-container a {
+  color: white;
+  text-decoration: none;
+  font-size: 28px;
+}
+
+.input-container {
+  background-color: white;
+  max-width: 320px;
+  width: 50%;
+  display: flex;
+  align-items: center;
+  padding: 16px 0px 16px 20px;
+  gap: 8px;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+
+.input-container i {
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.input-container input::placeholder {
+  color: rgba(0, 0, 0, 0.4);
+}
+
+.input-container input {
+  width: 100%;
+  font-size: 16px;
+  outline: none;
+  color: black;
+  border: none;
+  background-color: white;
+}
+
+main {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 28px;
+}
+
+section#input-note-section,
+section#active-note-section,
+section#archived-note-section {
+  width: 100%;
+  padding-inline: 16px;
+  display: flex;
+  justify-content: center;
+}
+
+.active-notes-container,
+.archived-notes-container {
+  width: 100%;
+  justify-content: center;
+  display: flex;
+  padding: 0px 16px;
+}
+
+.input-note-container {
+  max-width: 768px;
+  width: 100%;
+}
+
+form {
+  padding: 32px 20px;
+  border-radius: 16px;
+  width: 100%;
+  box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  background-color: white;
+  -webkit-border-radius: 16px;
+  -moz-border-radius: 16px;
+  -ms-border-radius: 16px;
+  -o-border-radius: 16px;
+}
+
+form p {
+  text-align: end;
+}
+
+form input[type="text"],
+form textarea {
+  padding: 10px 0 10px 16px;
+  font-size: 16px;
+  border-radius: 8px;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  resize: none;
+}
+
+form input[type="submit"] {
+  border: none;
+  outline: none;
+  background-color: green;
+  padding-block: 8px;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 16px;
+  color: white;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+
+.active-notes-container,
+.archived-notes-container {
+  background-color: whites;
+  max-width: 1200px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.active-notes-list,
+.archived-notes-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(256px, 1fr));
+  grid-column-gap: 14px;
+  grid-row-gap: 14px;
+  width: 100%;
+}
+
+.active-notes-item,
+.archived-notes-item {
+  background-color: rgba(0, 0, 0, 0.03);
+  flex: auto 1 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  background-color: white;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -o-border-radius: 8px;
+}
+
+.note-text {
+  width: 100%;
+  padding: 16px;
+}
+
+.note-btn-group {
+  display: flex;
+  padding: 16px;
+  gap: 8px;
+}
+
+.note-btn-group button {
+  cursor: pointer;
+  flex: 1;
+  font-size: 14px;
+  padding-block: 8px;
+  outline: none;
+  border: none;
+  color: white;
+}
+
+.archive-button {
+  background-color: #ffbb64;
+  border-radius: 8px;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -o-border-radius: 8px;
+}
+
+.active-button {
+  background-color: #23a523;
+  border-radius: 8px;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -o-border-radius: 8px;
+}
+
+.delete-button {
+  background-color: #d24545;
+  border-radius: 8px;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -o-border-radius: 8px;
+}
+
+footer {
+  width: 100%;
+  text-align: center;
+  padding-block: 32px;
+  background-color: #372461;
+  color: white;
+}
+
